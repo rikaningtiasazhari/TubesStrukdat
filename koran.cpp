@@ -22,10 +22,25 @@ int main ()
 		cin>>pilihan;
 		switch(pilihan)
 		{
+    			case 1:
+			{
+				if(tumpuk.atas==100-1)
+				{
+					cout<<"Tumpukan Penuh";
+					cout<<endl;
+				}
+				else
+				{
+					cout<<"Kode koran yang diinputkan = ";cin>>baru;
+					tumpuk.atas++;
+					tumpuk.data[tumpuk.atas]=baru;
+				}
+				cout<<"-------------------------------------\n";
+				break;
+			}
     
     
-    
-    }
+   		}
 		cin.ignore();
 		cin.get();
 		system("cls");
