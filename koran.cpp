@@ -38,9 +38,46 @@ int main ()
 				cout<<"-------------------------------------\n";
 				break;
 			}
-				
-			
-				
+			case 2:
+				{
+				if(tumpuk.atas == -1){
+					cout<<"Tumpukan Kosong \n";
+				}
+				else{
+					cout<<"Kode koran yang diambil = "<<tumpuk.data[tumpuk.atas];
+					tumpuk.atas--;
+					cout<<"\n\n";
+				}
+				cout<<"--------------------------------------\n";
+				break;
+			}
+			case 3:
+				{
+				if(tumpukan.atas == -1){
+					cout<<"Tumpukan Kosong \n";
+				}
+				else{
+					cout<<"\n Kode koran yangg tersedia saat ini adalah : \n";
+					for(int i=0 ; i <= tumpuk.atas ; i++){
+						cout<<"Tumpukan Koran ke- "<<i+1<<" : "<<tumpuk.atas[i]<<endl;
+					}
+					cout<<"\n\n";
+				}
+				cout<<"-------------------------------------\n";
+				break;
+			}
+			case 4:
+				{
+					cout<<"Lihat tumpukan ke = ";
+					cin>>i;
+					cout<<"Tumpukan ke "<<i<<" adalah = "<<tumpuk.data[i-1]<<endl;
+					break;
+				}
+			case 5:
+				{
+					exit(0);
+					break;
+				}
 			default:
 			cout<<"\nTidak ada dalam pilihan";
 			cout<<endl;
