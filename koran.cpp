@@ -38,8 +38,13 @@ int main ()
 				cout<<"-------------------------------------\n";
 				break;
 			}
-    
-    
+				
+			
+				
+			default:
+			cout<<"\nTidak ada dalam pilihan";
+			cout<<endl;
+			cout<<"-------------------------------------\n";
    		}
 		cin.ignore();
 		cin.get();
